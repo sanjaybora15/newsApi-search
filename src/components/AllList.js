@@ -20,7 +20,7 @@ class AllList extends React.Component {
 
   getData = async () => {
     const res = await newsApi.get(
-      "top-headlines?country=in&apiKey=363d26dd3d664d199ca63adc371e22aa"
+      "top-headlines?country=in&apiKey=a6a67ebf52c14835825f8d9b2a8ee209"
     );
     this.setState({
       users: res.data.articles,

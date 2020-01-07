@@ -19,9 +19,7 @@ class Searchbar extends React.Component{
     //handle the input change
     handleSearch = (e) => {
         const q = e.target.value
-        if(q){
-            this.setState({value:q,loading:true})
-        }
+        this.setState({value:q,loading:true})
     }
 
     

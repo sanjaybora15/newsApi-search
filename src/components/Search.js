@@ -25,7 +25,7 @@ class App extends React.Component {
   onSearchSubmit = async (value, pageNo) => {
     this.setState({ loading: true });
     const response = await newsApi.get(
-      `everything?q=${value}&apiKey=363d26dd3d664d199ca63adc371e22aa&pageSize=10&page=${pageNo}`,
+      `everything?q=${value}&apiKey=a6a67ebf52c14835825f8d9b2a8ee209&pageSize=10&page=${pageNo}`,
       {
         params: { query: value }
       }
