@@ -201,6 +201,29 @@ flex-direction: column;
     -5px -5px 0px 1px rgba(236, 225, 225, 0.22);
 }
 
+.bttn-prev-next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bttn-prev-next .bottom-paginate {
+  width: 130px;
+  height:40px;
+  font-size: 16px;
+  background-color:rgb(97, 205, 238);
+  border:none;
+  margin:10px;
+  color:#fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.bttn-prev-next .bottom-paginate:hover{
+  opacity: .9;
+  background-color:rgb(157, 177, 182);
+}
+
+
+/* media screen */
 @media only screen and (max-width: 650px) {
   .card-list{
     flex-direction: column;
@@ -226,6 +249,6 @@ flex-direction: column;
 
 }
 @media all and (max-width: 500) {
-  
-  
-  }
+}
+
+
