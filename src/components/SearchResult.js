@@ -5,7 +5,7 @@ import Spinner from "./Spinner";
 class SearchResult extends React.Component {
   render() {
     const { searchList, loading, currentPageNo } = this.props.location.state;
-    if (searchList.length < 1) {
+    if (searchList.articles.length < 1) {
       return (
         <h1 className="top-headlines">
           {" "}
