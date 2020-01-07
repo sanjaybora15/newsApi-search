@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Live http://newsapii-app.herokuapp.com/
+
+# Steps to run the app
+1. clone the repo
+2. cd newsApi-search
+3. npm install
+4. npm start
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
