@@ -11,23 +11,20 @@ class Searchbar extends React.Component{
     }
     
     //onSubmit of search query
-    onFormSubmit = e => {
+    onFormSubmit = async e => {
         e.preventDefault();
-        this.props.onSubmit(this.state.value,this.state.currentPageNo);
+        await this.props.onSubmit(this.state.value,this.state.currentPageNo);
     }
 
     //handle the input change
     handleSearch = (e) => {
         const q = e.target.value
         if(q){
-            this.setState({value:q,loading:true,message:''})
-        }else{
-            this.setState({value:q, message: '' }) 
-        }  
+            this.setState({value:q,loading:true})
+        }
     }
 
     
-
     render(){
         return (
             <div className="search-box">
@@ -44,7 +41,6 @@ class Searchbar extends React.Component{
             </div>
         )
     }
-    
 }
 
 export default Searchbar
